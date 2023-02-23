@@ -50,6 +50,7 @@ namespace Iovs {
 
     PyList_Insert(path, 0, PyUnicode_FromString(CATALYST_PYTHON_PARAVIEW_ZIP));
     PyList_Insert(path, 0, PyUnicode_FromString(CATALYST_PYTHON_VTK_ZIP));
+    PyList_Insert(path, 0, PyUnicode_FromString(CATALYST_PYTHON_SITE_PACKAGES));
 
     Py_DECREF(sys);
     Py_DECREF(path);
